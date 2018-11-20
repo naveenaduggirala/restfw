@@ -9,3 +9,9 @@ from django.db import models
 class Product(models.Model):
 	name = models.CharField(max_length=100,blank=True,null=True)
 	code = models.CharField(max_length=100,blank=True,null=True)
+
+class Customer(models.Model):
+	name = models.CharField(max_length=100,blank=True,null=True)
+	code = models.CharField(max_length=100,blank=True,null=True)
+	qualification = models.CharField(max_length=100,blank=True,null=True)
+

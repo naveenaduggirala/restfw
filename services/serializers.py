@@ -11,3 +11,8 @@ class ProductSerializers(serializers.Serializer):
 	id = serializers.IntegerField(read_only=True)
 	name = serializers.CharField(required=False, allow_blank=True, max_length=100)
 	code = serializers.CharField(required=False, allow_blank=True, max_length=100)
+
+class CustomorSerializers(serializers.Serializer):
+	name = serializers.CharField(max_length=100)
+	code = serializers.CharField(max_length=100)
+	qualification = serializers.CharField(max_length=100)
